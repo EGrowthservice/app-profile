@@ -19,6 +19,7 @@ export default function ContactForm() {
           </label>
           <input
             type="text"
+            placeholder='Họ và tên'
             id="name"
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
             value={formData.name}
@@ -33,28 +34,26 @@ export default function ContactForm() {
           <input
             type="email"
             id="email"
+            placeholder='example@gmail.com'
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             required
           />
         </div>
-        <div className="mb-6">
-          <label htmlFor="project" className="block text-gray-700 font-medium mb-2">
-            Dự Án Quan Tâm
+          <div className="mb-6">
+          <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
+            Mô tả 
           </label>
-          <select
-            id="project"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
-            value={formData.project}
-            onChange={(e) => setFormData({ ...formData, project: e.target.value })}
+          <input
+            type="text"
+            id="name"
+            placeholder='Mô tả dự án bạn muốn làm'
+            className="w-full px-4 py-8 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+            value={formData.name}
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             required
-          >
-            <option value="">Chọn dự án</option>
-            <option value="Dự Án 1">Dự Án 1</option>
-            <option value="Dự Án 2">Dự Án 2</option>
-            <option value="Dự Án 3">Dự Án 3</option>
-          </select>
+          />
         </div>
         <button
           type="submit"

@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import ContactForm from '../components/ContactForm';
 import LanguageIntro from '../components/LanguageIntro';
+import WebsiteDesignProcess from '../components/WebsiteDesignProcess';
 import Link from 'next/link';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
     <main className="bg-gray-50 min-h-screen pt-20">
       {/* Slider */}
       <section className="mb-16">
+
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
           spaceBetween={50}
@@ -25,8 +27,8 @@ export default function Home() {
         >
           <SwiperSlide>
             <div>
-              <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-              <div className="relative z-10 text-center text-white px-4 pt-[80px] pb-[80px]">
+              <div className="absolute inset-0 bg-gray-200 bg-opacity-50"></div>
+              <div className="relative z-10 text-center text-black px-4 pt-[80px] pb-[80px]">
                 <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 drop-shadow-lg">
                   Thiết Kế Website Chuyên Nghiệp
                 </h2>
@@ -47,8 +49,9 @@ export default function Home() {
               className="h-full flex items-center justify-center bg-cover bg-center relative transition-transform duration-5000 transform scale-100 group-hover:scale-105"
               style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80)' }}
             >
-              <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-              <div className="relative z-10 text-center text-white px-4 pt-[80px] pb-[80px]">
+              <div className="absolute inset-0 bg-gray-200 bg-opacity-50"></div>
+
+              <div className="relative z-10 text-center text-black px-4 pt-[80px] pb-[80px]">
                 <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 drop-shadow-lg">
                   Tư Vấn Phát Triển Website
                 </h2>
@@ -66,11 +69,10 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div
-              className="h-full flex items-center justify-center bg-cover bg-center relative transition-transform duration-5000 transform scale-100 group-hover:scale-105"
-              style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80)' }}
             >
-              <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-              <div className="relative z-10 text-center text-white px-4 pt-[80px] pb-[80px]">
+              <div className="absolute inset-0 bg-gray-200 bg-opacity-50"></div>
+
+              <div className="relative z-10 text-center text-blacj px-4 pt-[80px] pb-[80px]">
                 <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 drop-shadow-lg">
                   Công Nghệ Hiện Đại
                 </h2>
@@ -125,6 +127,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+        <WebsiteDesignProcess />
         <LanguageIntro />
 
         {/* Contact Form */}
@@ -139,6 +142,8 @@ export default function Home() {
             </Link>
           </div>
         </section>
+
+
       </div>
     </main>
   );
