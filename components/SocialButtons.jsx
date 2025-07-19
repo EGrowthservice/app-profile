@@ -36,7 +36,7 @@ export default function SocialButtons() {
 
       {/* SMS */}
       <Link
-        href="sms:+84941518881"
+        href="tel:+84941518881"
         className="bg-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center w-12 h-12"
       >
         <Image
